@@ -2,6 +2,7 @@
 
 int main() {
 
-	printf("Hello PG3");
+	printf("Hello World\n");
+	printf("こんにちは\n");
 	return 0;
 }
