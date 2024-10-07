@@ -54,7 +54,7 @@ int main() {
 
 //コールバック関数を使用して結果を表示
 void display_result(int dice_roll, int (*callback)(int)) {
-    if (callback(dice_roll) == 0) {
+    if (callback(dice_roll) == 0) { //関数ポインタを使って関数を呼び出し
         printf("サイコロの出目は%dで、偶数(丁)です。\n", dice_roll);
     }
     else {
