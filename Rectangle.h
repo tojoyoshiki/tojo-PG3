@@ -17,6 +17,6 @@ public:
 
     //–ÊÏ‚ğ•\¦
     void Draw() override {
-        printf("Rectangle Area: %.2f\n", area);
+        printf("Rectangle@: %.2f\n", area);
     }
 };

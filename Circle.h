@@ -19,7 +19,7 @@ public:
 
     //–ÊÏ‚ğ•\¦
     void Draw() override {
-        printf("Circle Area: %.2f\n", area);
+        printf("Circle : %.2f\n", area);
     }
 };
 
