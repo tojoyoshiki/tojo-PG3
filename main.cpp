@@ -24,7 +24,7 @@ int main() {
     //西日暮里駅1971に追加
     auto it = stations.begin();
 
-    //ここのwhileででイテレータを定義する
+    //ここのwhileででイテレータをつかう
     while (std::strcmp(*it, "Nippori") != 0) ++it;
     stations.insert(it, "NishiNippori");
 
