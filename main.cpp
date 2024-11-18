@@ -1,3 +1,5 @@
+//リストで駅名の配列を定義して表示するサンプル
+//このサンプルに2回駅を追加して2回for文で表示する処理を追加する
 #include <stdio.h>
 #include <cstdio>
 #include <list>
@@ -8,7 +10,7 @@ constexpr int MAX_NAME_LENGTH = 50;
 
 int main() {
     // 1970年山手線駅名一覧を初期化
-    const char* stationNames1970[] = {
+    const char* rosen1970[] = {
         "Tokyo", "Kanda", "Akihabara", "Okachimachi", "Ueno", "Uguisudani",
         "Nippori", "Tabata", "Komagome", "Sugamo", "Otsuka", "Ikebukuro",
         "Mejiro", "Takadanobaba", "ShinOkubo", "Shinjuku", "Yoyogi",
@@ -17,10 +19,12 @@ int main() {
     };
 
     // 双方向リスト
-    std::list<const char*> stations(stationNames1970, stationNames1970 + 28);
+    std::list<const char*> stations(rosen1970, rosen1970 + 28);
 
     //西日暮里駅1971に追加
     auto it = stations.begin();
+
+    //ここのwhileででイテレータを定義する
     while (std::strcmp(*it, "Nippori") != 0) ++it;
     stations.insert(it, "NishiNippori");
 
